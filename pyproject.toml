@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "couchi-db"
+version = "0.1.0"
+description = ""
+authors = ["H0ldnack <githubby@mail.holdnack.net>"]
+readme = "README.md"
+packages = [{include = "couchi_db"}]
+
+[tool.poetry.scripts]
+cli = 'cli:run'
+tui = 'tui:run'
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.23.0"
+uvloop = "^0.17.0"
+rich = "^12.6.0"
+aiofiles = "^22.1.0"
+prompt-toolkit = "^3.0.31"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
